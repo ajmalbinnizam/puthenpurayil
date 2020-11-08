@@ -1,10 +1,7 @@
 <!doctype html>
 <html>
 <head>
-    <title> 
-        Puthenpurayil Group
-    </title>
-
+    
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +9,14 @@
     <meta name="content" content="Puthenpurayil Group. Kerala’s No.1 Multi Brand Home Appliances Dealer...! Kollam, Kottarakara, punalur, ayoor, Chinnakada,kadapakada, Electronics dealer  Home Appliances collegejunction Small Appliances. Computers, Sony, Kelvinator, Voltas, Allwyn, Sony, Akai, LG, Samsung, Thoshiba, Godreg, Dell, Lenovo etc Best selling company. Guard Kollam service  Onida Kollam service  Planet Gas Stove  Racold BajajButterflyOrint Fan Amritha Grinder GeePass Thomson Evolve Induction Cooker  Forbs /Vaccum Cleaner">
 
     <meta name="description" content="Puthenpurayil Group is one of the No.1 Multi Brand Home Appliances Dealer.We provide electronics and home appliances of all major brands. Our head office is in Kollam. We have been in electronic distributer for an ample amount of time and we have our group of expertises">
+    <title> 
+        Puthenpurayil Group
+    </title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="images/logoicon.png" rel="icon" type="image/x-icon">
+
 
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/custom.css" type="text/css">
@@ -47,7 +50,7 @@
 <div class="popupbody" id="popupbodyid">
 <div class="mwp_title">
 <div class="mwp_icon"><i class="fab fa-whatsapp"></i></div>    
-<div class="mwp_title_con"><h4>Puthenpurayil</h4> <p>Click on any one of our representatives below to chat on WhatsApp</p></div>    
+<div class="mwp_title_con"><h4>Puthenpurayil</h4> <p>Click on our executive below to chat on WhatsApp</p></div>    
 </div>    
 <div class="mwp_chat_body">
 <ul>
@@ -90,7 +93,7 @@
                                 <ul>
                                     <li class="font_number top_h_item1"><i class="fa fa-phone" aria-hidden="true"><a href="tel:+918078795323"></i> +91 8078795323</li></a>
         
-                                    <li class="scroll"><a href="#testimonial">Our dealers</a></li>
+                                    <!-- <li class="scroll"><a href="#testimonial">Our dealers</a></li> -->
                                 </ul>
                             </div>
                         </div>
@@ -666,10 +669,10 @@
                 </h1>
             </div>
 
-            <form   action="action_page.php">
+            <form id="submit-form" action="">
           
               <label for="fname">Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="name">
+              <input type="text" id="fname" name="name" placeholder="name">
 
               <label for="email">E-mail</label>
               <input type="text" id="email" name="email" placeholder="Email id">
@@ -829,7 +832,7 @@
     <script type="text/javascript" src="js/main.js"></script>
 
     <script type="text/javascript" src="js/ultimate.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script>
         wow = new WOW({
@@ -861,6 +864,27 @@
             $("#myModal").modal('show');
         });
     </script>-->
+
+    <!-- form script -->
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwOxchbP3ph7QzrMozBHaWUjKpz-DPRllS188Nv8tAADelLVAk/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 
 </body>
 
