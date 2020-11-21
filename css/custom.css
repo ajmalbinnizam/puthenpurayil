@@ -102,7 +102,9 @@ img {
 
 p{
 	color:#454545; 
-	 line-height:28px
+	 line-height:28px;
+	 font-weight:bold;
+	 font-size: medium;
 }
 	
 .header_sec {
@@ -251,6 +253,16 @@ p{
 	width:150px;
 	    margin-top: 15px;
 }	
+
+
+
+.venture p{
+	/* text-transform:normal; */
+	font-size:20px; 
+	display:block; color:#000;
+	margin-left: 5px;
+	padding: 5px;
+}
 
 /* .logo_sect_fixed .logo_part a img {
 	width:150px; margin-top: 12px;
@@ -413,9 +425,9 @@ background-size:cover; bottom:0}
 
 
 .home_about_img img{
-	width:100%;
+	width:80%;
 	
-	top:60px; right:0
+	top:50px; right:0
 }
 
 .about_title{
@@ -688,8 +700,8 @@ background-size:cover; bottom:0}
 	z-index:100; left:7%; 
 }
 
-.offer_text p{ color:#000; font-size:18px; margin-bottom:0; padding-bottom:0}
-.offer_text h4{ color:#15becd; font-weight:600; font-size:28px;
+.offer_text p{ color:#fff; font-size:18px; margin-bottom:0; padding-bottom:0}
+.offer_text h4{ color:#fff; font-weight:600; font-size:28px;
 border-top:1px solid #15becd; border-bottom:1px solid #15becd; padding:5px 0 7px 0}
 
 
@@ -1246,20 +1258,7 @@ display:block; width:100%}
 	font-size:20px; color:#15becd;
 }
 
-.haji_kanankandy_img {
-	width:12%; float:left; 
-}
 
-
-.haji_kanankandy_img img{
-	padding:10px; background:#aeaeae;
-	border:1px solid #ccc; 
-	width:123px; margin-top:25px
-}
-
-.haji_kanankandy_cont {
-	width:88%; float:left; padding-left:20px; 
-}
 
 .about_director{
 	width:100%; float:left; background:#f3f3f3;
