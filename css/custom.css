@@ -108,6 +108,7 @@ p{
 }
 .copyright_sec p{
 	font-weight: none;
+	font-size: 16px;
 
 }
 	
@@ -258,6 +259,10 @@ p{
 	    margin-top: 15px;
 }	
 
+#abt{
+
+
+}
 /* team */
 /* Three columns side by side */
 .column {
