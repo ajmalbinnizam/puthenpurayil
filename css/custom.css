@@ -102,9 +102,13 @@ img {
 
 p{
 	color:#454545; 
-	 line-height:28px;
+	 line-height:26px;
 	 font-weight:bold;
 	 font-size: medium;
+}
+.copyright_sec p{
+	font-weight: none;
+
 }
 	
 .header_sec {
@@ -253,6 +257,62 @@ p{
 	width:150px;
 	    margin-top: 15px;
 }	
+
+/* team */
+/* Three columns side by side */
+.column {
+	float: left;
+	width: 33.3%;
+	margin-bottom: 16px;
+	padding: 0 8px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+	.column {
+	  width: 100%;
+	  display: block;
+	}
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+	  margin-top: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+	padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  
+  .title {
+	color: 15becd;
+  }
+  
+  .button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: rgb(26, 219, 219);
+	text-align: center;
+	cursor: pointer;
+	width: 30%;
+  }
+  
+  .button:hover {
+	background-color: #555;
+  }
+
 
 
 
@@ -1612,7 +1672,8 @@ top:46%; cursor:pointer; transition: all 0.5s ease-in-out;
 
 
 .branches_sec {
-	width:100%; float:left; padding-top:100px
+	width:100%; float:left; 
+	/* padding-top:100px */
 }
 
 
